@@ -27,7 +27,7 @@ variable "repository_description" {
 variable "repository_visibility" {
   type        = string
   description = "Can be public or private."
-  default     = "private"
+  default     = "public"
 }
 
 variable "repository_has_projects" {
