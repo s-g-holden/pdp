@@ -16,8 +16,8 @@ variable "visibility" {
   default     = "private"
 }
 
-variable "has_projects" {
+variable "private" {
   type        = bool
-  description = "Set to true to enable the GitHub Projects features on the repository."
-  default     = true
+  description = "Set to true to create a private repository. Repositories are created as public (e.g. open source) by default."
+  default     = false
 }
