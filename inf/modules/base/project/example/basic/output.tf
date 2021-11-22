@@ -1,4 +1,4 @@
 output "project_id" {
-  value       = github_organization_project.this.id
+  value       = module.project.project_id
   description = "A string containing project id."
 }

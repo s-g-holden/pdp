@@ -1,5 +1,4 @@
-resource "github_repository_project" "this" {
+resource "github_organization_project" "this" {
   name       = "A Repository Project"
-  repository = var.repository
   body       = "This is a repository project."
 }
