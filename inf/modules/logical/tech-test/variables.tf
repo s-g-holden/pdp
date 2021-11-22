@@ -1,3 +1,10 @@
+# Organisation Settings
+variable "owner" {
+  type        = string
+  description = "This is the target GitHub organization or individual user account to manage."
+  default     = "novel-terrain"
+}
+
 # Project Settings
 variable "project_name" {
   type        = string
@@ -34,4 +41,11 @@ variable "repository_has_projects" {
   type        = bool
   description = "Set to true to enable the GitHub Projects features on the repository."
   default     = true
+}
+
+# Column Settings
+variable "column_names" {
+  type        = set(string)
+  description = "List of column names."
+  default     = ["to-do", "doing", "done"]
 }
