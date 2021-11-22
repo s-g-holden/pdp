@@ -15,9 +15,3 @@ variable "visibility" {
   description = "Can be public or private."
   default     = "private"
 }
-
-variable "private" {
-  type        = bool
-  description = "Set to true to create a private repository. Repositories are created as public (e.g. open source) by default."
-  default     = false
-}
