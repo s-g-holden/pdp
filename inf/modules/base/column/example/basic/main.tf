@@ -1,5 +1,5 @@
 module "column" {
-  source = "../../"
+  source     = "../../"
   project_id = var.project_id
-  name        = var.name
+  name       = var.name
 }

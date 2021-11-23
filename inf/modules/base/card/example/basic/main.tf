@@ -1,5 +1,5 @@
 module "card" {
-  source = "../../"
+  source    = "../../"
   column_id = var.column_id
-  note        = var.note
+  note      = var.note
 }
