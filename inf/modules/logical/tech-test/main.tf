@@ -29,3 +29,17 @@ module "cards" {
   note       = file("${path.module}/cards/${each.value.note}")
   column_id  = module.columns[each.value.status].column_id
 }
+
+resource "github_repository_webhook" "four_keys" {
+  repository = module.repository.repository_name
+
+  configuration {
+    url          = "https://event-handler-2gewkfcona-uc.a.run.app"
+    content_type = "json"
+    secret = "223e5233f3a08b03b0241c4e727bdad9e4427a50"
+  }
+
+  active = true
+
+  events = ["*"]
+}
