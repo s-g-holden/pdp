@@ -22,3 +22,10 @@ module "columns" {
   name       = each.value
   project_id = module.project.project_id
 }
+
+module "cards" {
+  for_each   = var.cards
+  source     = "git@github.com:ElDiabloRojo/repo-repo.git//inf/modules/base/card"
+  note       = file("${path.module}/cards/${each.value.note}")
+  column_id  = module.columns[each.value.status].column_id
+}

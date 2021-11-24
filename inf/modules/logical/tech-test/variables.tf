@@ -49,3 +49,23 @@ variable "column_names" {
   description = "List of column names."
   default     = ["to-do", "doing", "done"]
 }
+
+# Card Settings
+variable "cards" {
+  type        = map
+  description = "List of column names."
+  default     = {
+    "001" = {
+      status = "to-do"
+      note = "c-001.md"
+    },
+    "002" = {
+      status = "doing"
+      note = "c-002.md"
+    },
+    "003" = {
+      status = "done"
+      note = "c-003.md"
+    }
+  }
+}
