@@ -9,7 +9,7 @@ variable "owner" {
 variable "project_name" {
   type        = string
   description = "The name of the project."
-  default     = "tech-test"
+  default     = "personal-development-plan"
 }
 
 variable "project_body" {
@@ -22,7 +22,7 @@ variable "project_body" {
 variable "repository_name" {
   type        = string
   description = "The name of the repository."
-  default     = "tech-test"
+  default     = "personal-development-plan"
 }
 
 variable "repository_description" {
